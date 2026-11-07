@@ -1,0 +1,22 @@
+{
+  "name": "QA Tracker",
+  "short_name": "QA Tracker",
+  "description": "Tu plan para aprender QA y conseguir empleo: Para hoy, roadmap, práctica, ISTQB, tareas y carrera.",
+  "lang": "es",
+  "start_url": "./#/planner",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#08090c",
+  "theme_color": "#08090c",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Para hoy", "url": "./#/planner", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Mi plan", "url": "./#/plan", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
