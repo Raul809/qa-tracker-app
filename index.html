@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-hPsKGxTV/uTkeORDLg48lOkTEhjR0gENY7Dcs63JTb0='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content="Tu plan para aprender QA y conseguir empleo: roadmap, práctica, ISTQB, tareas, tiempo y carrera." />
+    <meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>QA Tracker</title>
+    <!-- App instalable (PWA): celular y PC, funciona sin internet. -->
+    <link rel="manifest" href="/qa-tracker-app/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/qa-tracker-app/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="QA Tracker" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>" />
+    <script>
+      // Aplica el tema antes de pintar para evitar un destello del tema equivocado.
+      try {
+        var s = JSON.parse(localStorage.getItem('qa-tracker:v2:wal') || '{}').settings || {}
+        var t = s.theme || 'system'
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/qa-tracker-app/assets/index-DNfzw_B-.js"></script>
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/ui-BsCd6iEL.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/date-C94hA2Y9.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/curriculum-DlxG-mfD.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/istqb-NJyKy1-5.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/studyPlan-DviH7aOq.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/automation-CQdGw_a4.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/search-Btb81J43.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/defaults-C3I_CEVH.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/practice-BUnTSAGf.js">
+    <link rel="modulepreload" crossorigin href="/qa-tracker-app/assets/mastery-DLT4OGzX.js">
+    <link rel="stylesheet" crossorigin href="/qa-tracker-app/assets/index-CH7dmCrC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
